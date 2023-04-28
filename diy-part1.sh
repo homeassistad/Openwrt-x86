@@ -21,4 +21,3 @@ echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 git pull
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-make menuconfig
