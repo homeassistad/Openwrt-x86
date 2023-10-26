@@ -18,6 +18,8 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-git pull
-./scripts/feeds update -a
-./scripts/feeds install -a
+sed -i 's/luci-theme-bootstrap/luci-theme-design/' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-design/' feeds/luci/collections/luci-nginx/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-design/' feeds/luci/collections/luci-ssl-nginx/Makefile
+sed -i 's/192.168.1.1/192.168.1.32/g' package/base-files/files/bin/config_generate
+
