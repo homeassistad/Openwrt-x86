@@ -18,3 +18,4 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci-ng
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci-ssl/Makefile
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci-ssl-openssl/Makefile
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci-light/Makefile
+git clone https://github.com/sirpdboy/luci-app-advancedplus package/add/luci-app-advancedplus
